@@ -1,0 +1,21 @@
+<div ng-controller="addEditCtrl">
+	<h3>Add / Edit widget</h3>
+	<form class="form" role="search">
+		<div class="form-group">
+			<input ng-model="widget.name" type="text" class="form-control" placeholder="Name">
+		</div>
+		<div class="row" ng-repeat="(key, value) in widget.kvp">
+			<div class="col-lg-6">
+				<div class="form-group">
+					<input ng-model="key" type="text" class="form-control" placeholder="Key">
+				</div>
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="form-group">
+					<input ng-model="value" type="text" class="form-control" placeholder="Value">
+				</div>
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+		<button class="btn btn-primary pull-right">Save</button>
+	</form>
+</div>

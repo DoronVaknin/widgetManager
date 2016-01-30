@@ -1,0 +1,25 @@
+<div ng-controller="summaryCtrl">
+	<h3>Summary</h3>
+	<div class="row">
+		<ul class="widgets_list list-group">
+			<li class="list-group-item" ng-repeat="widget in widgets" data-id="{{widget.id}}">
+				<div class="row">
+					<div class="col-md-7">{{widget.name}}</div>
+					<div class="col-md-5 pull-right">
+			  			<a href="#/{{widget.id}}" class="btn btn-info">
+			  				<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;Details
+			  			</a>
+			  			<button type="button" class="btn btn-danger" ng-click="askWidgetRemoval(widget.id)">
+			  				<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;Remove
+			  			</button>
+		  			</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="row">
+		<a href="#/edit/" type="button" class="btn btn-primary">
+			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add
+		</a>
+	</div>
+</div>

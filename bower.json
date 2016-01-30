@@ -1,0 +1,21 @@
+{
+  "name": "widget_manager",
+  "version": "0.0.0",
+  "description": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [],
+  "authors": [
+    "doron_vaknin"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.9",
+    "angular-bootstrap": "~1.1.0",
+    "bootstrap": "~3.3.6"
+  }
+}
